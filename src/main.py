@@ -14,13 +14,14 @@ def main():
     
     my_seq = Sequence(seq_string, "protein")
     print(f"Starting with sequence:\n{my_seq}\n")
-    print(f"Length: {len(my_seq)}\n")
+    print(f"Length: {len(my_seq)}")
+    print(f"Kmer size: {k}\n")
 
     my_kmer_dict = my_seq.kmer_dict(k)
-    print(f"kmer dictionary:\n{my_kmer_dict}\n")
+    print(f"Kmer dictionary:\n{my_kmer_dict}\n")
 
     my_graph = alg.kmer_dict2graph(my_kmer_dict)
-    print(f"kmer graph (nodes = k-1mers, edges = kmers):\n{my_graph}\n")
+    print(f"Kmer graph (nodes: (k-1)mers, edges: kmers):\n{my_graph}\n")
 
     my_path = alg.eulerian_path(my_graph)
     print(f"Eulerian path:\n{my_path}\n")
