@@ -17,6 +17,11 @@
 ## PEAKS Simulator
 The PEAKS Simulator simulates a Peptide-Spectrum Matching (PSM) report with the format produced by the PEAKS software.
 It is used to simulate realistic peptides with `m/z`, `z`, `mass`, and `local confidence` values, to be used in the downstream assembly.
+
+### Input
+A `.txt` file with the aminoacid sequence of the target protein, and a `.txt` file with the aminoacid sequence to use as noise.
+
+### Output
 It can produce the results as `.csv` file or as `pandas DataFrame`.
 
 ### What it can do
