@@ -34,6 +34,6 @@ It can produce the results as `.csv` file or as `pandas DataFrame`.
 
 ### What it cannot do:
 - [ ] PTMs are not yet modelled\
-- [ ] Only the 20 canonycal aminoacid letters are allowed\
+- [ ] Only the 20 canonical aminoacid letters are allowed\
 - [ ] The protonation count is approximated, and doesn't model precise chemo-physical interactions\
 - [ ] The local confidence model is an approximation, and is not derived from spectral reconstruction\
