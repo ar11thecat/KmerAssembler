@@ -12,7 +12,8 @@
           \______/                                      |__/                                           
 ```
 # Welcome to oylerPeptideAssembler!
-⌛ sorry! Work in progress ⌛
+> [!WARNING]
+> ⌛ sorry! Work in progress ⌛
 
 ## PEAKS Simulator
 The PEAKS Simulator simulates a Peptide-Spectrum Matching (PSM) report with the format produced by the PEAKS software.
@@ -25,16 +26,16 @@ A `.txt` file with the aminoacid sequence of the target protein, and a `.txt` fi
 It can produce the results as `.csv` file or as `pandas DataFrame`.
 
 ### What it can do
-☑️ Simulate the cuts by a selectable range of proteases (tripsin, chymotripsin, elastase and others), considering cut probabilities and proline suppression\
-☑️ Consider the protonation of the residues to derive the m/z and z measures, as it would happen in MS1\
-☑️ Correct the neutral mass of the peptide by removing tryptic water\
-☑️ Simulate the local confidence by considering:\
+- [x] Simulate the cuts by a selectable range of proteases (tripsin, chymotripsin, elastase and others), considering cut probabilities and proline suppression
+- [x] Consider the protonation of the residues to derive the m/z and z measures, as it would happen in MS1
+- [x] Correct the neutral mass of the peptide by removing tryptic water
+- [x] Simulate the local confidence by considering:
 + the intrinsic confidence of each residue (for example, low for Leucine and Isoleucine, which have the same mass)
 + the position of the residue (residues close to the N-terminus of C-terminus can only form shorter b and y ions, which are harder to detect)
 + gaussian noise
 
 ### What it cannot do
-❎ PTMs are not yet modelled\
-❎ Only the 20 canonycal aminoacid letters are allowed\
-❎ The protonation count is approximated, and doesn't model precise chemo-physical interactions\
-❎ The local confidence model is an approximation, and is not derived from spectral reconstruction\
+- [ ] PTMs are not yet modelled\
+- [ ] Only the 20 canonycal aminoacid letters are allowed\
+- [ ] The protonation count is approximated, and doesn't model precise chemo-physical interactions\
+- [ ] The local confidence model is an approximation, and is not derived from spectral reconstruction\
